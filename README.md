@@ -1,7 +1,10 @@
-# Conference-page
+# ConferencePage
 
 
 > This project is based on an online website for EXPO DUBAI 2K20.
+
+>The about-page can be accessed from the homepage with the 'About' link. The homepage can be accessed from the main logo, or the 'home' icon on the about-page. Also, on the mobile version
+, both these pages can be accessed through the 'hamburger menu'.
 
 <p align="center">
   <img src="pictures/screenshots/1.PNG"/>
