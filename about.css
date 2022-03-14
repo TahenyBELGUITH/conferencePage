@@ -1,0 +1,246 @@
+@media only screen and (max-width: 768px) {
+  @font-face {
+    font-family: 'cocogoose';
+    src: url('/fonts/Cocogoose_trial.otf');
+  }
+
+  *,
+  *::after,
+  *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #272a31;
+  }
+
+  .width-100 {
+    width: 100%;
+  }
+
+  .display-flex {
+    display: flex;
+  }
+
+  .display-grid {
+    display: grid;
+  }
+
+  /* menu button */
+  .menu-btn {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger {
+    width: 50px;
+    height: 7px;
+    background: #ec5242;
+    transition: 0.25s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .hamburger::after,
+  .hamburger::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 7px;
+    background: #272a31;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .hamburger::before {
+    transform: translateY(13px);
+  }
+
+  .hamburger::after {
+    transform: translateY(-13px);
+  }
+
+  /* menu button animation */
+  .open .hamburger {
+    background-color: transparent;
+  }
+
+  .open .hamburger::before {
+    transform: rotate(45deg);
+  }
+
+  .open .hamburger::after {
+    transform: rotate(-45deg);
+  }
+
+  header {
+    background-image: url("./pictures/bg/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .intro-container {
+    flex-direction: column;
+    padding: 3%;
+  }
+
+  .intro-container h4 {
+    color: #ec5242;
+    margin: 1% auto;
+  }
+
+  .intro-container h1 {
+    font-family: "cocogoose", sans-serif;
+    color: #ec5242;
+    font-size: 27px;
+    line-height: 35px;
+    margin: 1% 14%;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+
+  .intro-container p {
+    background-color: rgba(211, 211, 211, 0.3);
+    border: 2px solid white;
+    padding: 8%;
+    line-height: 30px;
+  }
+
+  .intro-container h2 {
+    font-size: 20px;
+    font-family: "cocogoose", sans-serif;
+    margin: 5px 0;
+  }
+
+  .intro-container a {
+    color: #272a31;
+    font-size: 12px;
+    margin: 4% auto;
+    font-family: "cocogoose", sans-serif;
+  }
+
+  .intro-container span {
+    font-size: 20px;
+    margin: 4% auto;
+  }
+
+  .main-separator {
+    width: 13%;
+    margin: 0 auto;
+    border: 2px solid #ec5242;
+  }
+
+  .news-container {
+    margin: 12% auto;
+  }
+
+  .news-container h3 {
+    font-size: 13px;
+    margin: 5% 25%;
+  }
+
+  .news-container img {
+    width: 80%;
+    margin: 10%;
+    border: 2px solid #ec5242;
+  }
+
+  .previous-summit-container {
+    border-top: 2px solid #ebedf3;
+    flex-direction: column;
+    margin: 12% auto;
+    padding: 7%;
+    gap: 20px;
+  }
+
+  .previous-summit-img-one,
+  .previous-summit-img-two,
+  .previous-summit-img-three {
+    border: 1px solid #272a31;
+  }
+
+  .previous-summit-img-one {
+    padding: 23%;
+    background-image: url("./pictures/img/conf-one.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+  }
+
+  .previous-summit-img-two {
+    padding: 23%;
+    background-image: url("./pictures/img/conf-two.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+  }
+
+  .previous-summit-img-three {
+    padding: 23%;
+    background-image: url("./pictures/img/conf-three.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+  }
+
+  .partners-container {
+    gap: 10%;
+    padding: 6%;
+    background-color: #272a31;
+    flex-direction: column;
+  }
+
+  .partners-container h3 {
+    color: #fff;
+    font-size: 20px;
+    margin: 2% auto;
+  }
+
+  .partners-img {
+    margin: 7% auto;
+    flex-wrap: wrap;
+    gap: 4%;
+  }
+
+  .partners-img img,
+  .auto {
+    width: 30%;
+  }
+
+  .auto {
+    margin: 4px auto;
+  }
+
+  footer {
+    padding: 4%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-logo-container {
+    width: 40%;
+  }
+}
