@@ -265,11 +265,14 @@ footer {
   right: 0;
   background-color: #fff;
   border-bottom: 2px solid #272a31;
+  padding: 8rem;
 }
 
 .navbar-container ul {
   list-style: none;
-  gap: 3rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar-container ul li a {
@@ -330,7 +333,8 @@ footer {
   }
 
   .navbar-container ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     list-style: none;
   }
 
