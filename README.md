@@ -71,6 +71,7 @@ Give a ⭐️ if you like this project!
 - Hat tip to Microvers for giving me this project,
 - Hat tip to Cindy Chin for providing me the the design tempate used on thi project
 - Hat tip to All my peers in Microverse who gave me ides and suggestions to improve this website.
+- Hat tip to Cindy Shin GUI & Graphic Designer
 
 
 ### 📝 License
