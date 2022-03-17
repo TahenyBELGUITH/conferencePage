@@ -1,51 +1,25 @@
 // menu btn js
 const menuBtn = document.querySelector('.menu-btn');
 const closeBtn = document.querySelector('.close');
-const menuItem = document.querySelectorAll('.list-items');// output : array
-const container = document.querySelector('.humb-container');
+const menuItems = document.querySelectorAll('.list-items');// output : array
+const container = document.querySelector('.navbar-container');
 const speakersContainer = document.querySelector('.cards-speakers-container');
 const btnSeeMore = document.getElementById('see-more');
 
-
-function openNav () {
-  // container.classList.remove('display-none');
-  container.style.top = '0'
+function openNav() {
+  container.classList.remove('display-none');
 }
 
-function closeNav () {
-  // container.classList.add('display-none');
-  container.style.top = '-100'
+function closeNav() {
+  container.classList.add('display-none');
 }
 
-menuBtn.addEventListener('click',openNav);
-closeBtn.addEventListener('click',closeNav);
+menuBtn.addEventListener('click', openNav);
+closeBtn.addEventListener('click', closeNav);
 
-// array.forEach(element => {
-  
-// });
-
-// // fonction open the nav
-// function openNav() {
-//   container.classList.remove('display-none');
-// }
-
-// // fonction close the nav
-// function closeNav() {
-//   container.classList.add('display-none');
-// }
-
-// // open the navbar
-// menuBtn.addEventListener('click', openNav);
-
-// // close the container when the items are selected
-// menuItem.forEach((element) => {
-//   element.addEventListener('click', closeNav);
-// });
-
-// // close the navbar
-// closeBtn.addEventListener('click', closeNav);
-
-
+menuItems.forEach((element) => {
+  element.addEventListener('click', closeNav);
+});
 
 let i;
 
@@ -130,7 +104,6 @@ function createSpeaker() {
   }
 }
 
-
 btnSeeMore.addEventListener('click', () => {
   while (i < 6) {
     speakersContainer.innerHTML += `
@@ -150,4 +123,3 @@ btnSeeMore.addEventListener('click', () => {
   }
 });
 document.addEventListener('DOMContentLoaded', createSpeaker, false);
-

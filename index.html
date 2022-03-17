@@ -17,9 +17,8 @@
 
 <body>
   <header>
-    <nav class="navbar">
-      <img class="menu-btn hide" src="./pictures/icons/menu.png" alt="menu">
-      <div class="social-media display-none show">
+    <nav>
+      <div class="social-media display-none">
         <ul>
           <li><i class="fa-brands fa-facebook-f"></i></li>
           <li><i class="fa-brands fa-twitter"></i></li>
@@ -28,9 +27,10 @@
           <li>Logout</li>
         </ul>
       </div>
-      <div class="navbar-container">
-        <a href="index.html"><img class="hide display-none show" src="./pictures/logo/logo.png" alt="Logo"></a>
-        <ul class="display-none list-menu show">
+      <div class="navbar-container display-none">
+        <a class="display-none show" href="index.html"><img src="./pictures/logo/logo.png" alt="Logo"></a>
+        <img class="close hide" src="./pictures/icons/close.png" alt="close">
+        <ul class="list-menu">
           <li><a href="about.html">About</a></li>
           <li><a>Program</a></li>
           <li><a>Speakers</a></li>
@@ -38,31 +38,20 @@
         </ul>
       </div>
     </nav>
-
-    <div class="humb-container hide display-flex">
-      <img class="close" src="./pictures/icons/close.png" alt="close">
-      <ul class="list-menu">
-        <li class="list-items"><a href="about.html">About</a></li>
-        <li class="list-items"><a>Program</a></li>
-        <li class="list-items"><a>Speakers</a></li>
-        <li class="list-items sponsor"><a>Sponsors</a></li>
-      </ul>
-    </div>
-    <!-- intro section -->
-    <section class="intro-section">
-      <div class="intro-container display-flex width-100">
-        <h4>"Hello! Sharing world"</h4>
-        <h1>EXPO DUBAI SUMMIT 2K20</h1>
-        <p>Expo 2020 is a World Expo, currently hosted by Dubai in the United Arab Emirates from 1 October 2021 to 31
-          March 2022.
-          Originally scheduled for 20 October 2020 to 10 April 2021, it was postponed due to the COVID-19 pandemic.</p>
-
-        <h2>1 October 2021</h2>
-        <span>@Dubai Exhibition Centre</span>
-      </div>
-    </section>
   </header>
+  <section class="intro-section">
+    <div class="intro-container display-flex width-100">
+      <img class="menu-btn hide" src="./pictures/icons/menu.png" alt="menu">
+      <h4>"Hello! Sharing world"</h4>
+      <h1>EXPO DUBAI SUMMIT 2K20</h1>
+      <p>Expo 2020 is a World Expo, currently hosted by Dubai in the United Arab Emirates from 1 October 2021 to 31
+        March 2022.
+        Originally scheduled for 20 October 2020 to 10 April 2021, it was postponed due to the COVID-19 pandemic.</p>
 
+      <h2>1 October 2021</h2>
+      <span>@Dubai Exhibition Centre</span>
+    </div>
+  </section>
   <section class="program-section">
     <div class="program-container display-flex width-100">
       <div class="program-header">Main Program</div>
@@ -98,7 +87,7 @@
         <div class="card display-flex">
           <img src="./pictures/icons/network.png" alt="icon">
           <h5>CC Ignite</h5>
-          <p>Get opportunites to network with CC affiliates around the world.</p>
+          <p>Get opportunites to network with CC affiliates .</p>
         </div>
 
       </div>
