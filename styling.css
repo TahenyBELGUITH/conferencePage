@@ -91,7 +91,6 @@ span {
   background-image: url("./pictures/bg/bg-sponsors.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 1rem;
 }
 
 .program-cards {
@@ -264,17 +263,13 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 8rem;
   background-color: #fff;
   border-bottom: 2px solid #272a31;
 }
 
 .navbar-container ul {
   list-style: none;
-}
-
-.navbar-container ul li {
-  margin-bottom: 2rem;
+  gap: 3rem;
 }
 
 .navbar-container ul li a {
@@ -348,7 +343,6 @@ footer {
     text-decoration: none;
     font-size: 23px;
     font-weight: 900;
-    margin-right: 5rem;
     color: #272a31;
   }
 
