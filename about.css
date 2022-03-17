@@ -3,6 +3,14 @@
   margin: 2rem 0;
 }
 
+.news-p {
+  font-size: 15px;
+  line-height: 30px;
+  width: 100%;
+  margin: 0;
+  font-weight: 400;
+}
+
 .news-img-container {
   width: 90%;
   margin: 1rem auto;
@@ -19,6 +27,10 @@
   border: 1px solid #272a31;
 }
 
+.container {
+  gap: 2rem;
+}
+
 .previous-summit-container {
   flex-direction: column;
   padding: 1rem;
@@ -27,7 +39,7 @@
 }
 
 .previous-summit-container h3 {
-  font-size: 50px;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +95,14 @@
 
   .news-img-container img {
     margin: 5rem 0;
+  }
+
+  .news-p {
+    margin: 3rem auto;
+    font-size: 24px;
+    line-height: 45px;
+    width: 70%;
+    font-weight: 700;
   }
 
   .container {

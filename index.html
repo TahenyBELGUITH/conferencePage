@@ -9,17 +9,16 @@
   <script src="https://kit.fontawesome.com/1a9dfed18f.js" crossorigin="anonymous"></script>
   <link href=“https://fonts.cdnfonts.com/css/cocogoose” rel=“stylesheet”>
   <link rel="stylesheet" href="styling.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Lato:ital@1&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
   <title>Conference Page</title>
 </head>
 
 <body>
   <header>
     <nav class="navbar">
-      <div class="menu-btn display-flex hide">
-        <div class="hamburger"></div>
-      </div>
+      <img class="menu-btn hide" src="./pictures/icons/menu.png" alt="menu">
       <div class="social-media display-none show">
         <ul>
           <li><i class="fa-brands fa-facebook-f"></i></li>
@@ -29,17 +28,26 @@
           <li>Logout</li>
         </ul>
       </div>
-      <div class="navbar-container display-none show menu">
+      <div class="navbar-container">
         <a href="index.html"><img class="hide display-none show" src="./pictures/logo/logo.png" alt="Logo"></a>
-        <ul class="show display-none list-menu display-none show">
-          <li class="list-items"><a href="about.html">About</a></li>
-          <li class="list-items"><a>Program</a></li>
-          <li class="list-items"><a>Speakers</a></li>
-          <li class="list-items"><a>Sponsors</a></li>
+        <ul class="display-none list-menu show">
+          <li><a href="about.html">About</a></li>
+          <li><a>Program</a></li>
+          <li><a>Speakers</a></li>
+          <li class="sponsor"><a>Sponsors</a></li>
         </ul>
       </div>
     </nav>
 
+    <div class="humb-container hide display-flex">
+      <img class="close" src="./pictures/icons/close.png" alt="close">
+      <ul class="list-menu">
+        <li class="list-items"><a href="about.html">About</a></li>
+        <li class="list-items"><a>Program</a></li>
+        <li class="list-items"><a>Speakers</a></li>
+        <li class="list-items sponsor"><a>Sponsors</a></li>
+      </ul>
+    </div>
     <!-- intro section -->
     <section class="intro-section">
       <div class="intro-container display-flex width-100">
@@ -63,34 +71,34 @@
         <div class="card display-flex">
           <img src="./pictures/icons/lecture.png" alt="icon">
           <h5>Lecture</h5>
-          <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
+          <p>Listen to the speakers from various countries.</p>
         </div>
 
         <div class="card display-flex">
           <img src="./pictures/icons/watching.png" alt="icon">
           <h5>CC Exibition</h5>
-          <p>Appreciate various creations applying CC license of artists , organised from Art Center Nabi.</p>
+          <p>Appreciate various creations applying CC license of artists.</p>
         </div>
 
 
         <div class="card display-flex">
           <img src="./pictures/icons/chat.png" alt="icon">
           <h5>Forum</h5>
-          <p>Have the time to share your thoughts and opinions with experts for each topic.</p>
+          <p>Have the time to share your thoughts and opinions.</p>
         </div>
 
 
         <div class="card display-flex">
           <img src="./pictures/icons/workshop.png" alt="icon">
           <h5>Workshop</h5>
-          <p>Try creating your own work using open source license rather than just watching.</p>
+          <p>Try creating your own work using open source license.</p>
         </div>
 
 
         <div class="card display-flex">
           <img src="./pictures/icons/network.png" alt="icon">
           <h5>CC Ignite</h5>
-          <p>Get opportunites to network with CC affiliates around the world , also after the summit.</p>
+          <p>Get opportunites to network with CC affiliates around the world.</p>
         </div>
 
       </div>
@@ -107,88 +115,13 @@
       <h3>Featured speakers</h3>
       <hr class="main-separator">
       <div class="cards-speakers-container display-flex">
-        <div class="cards-speakers display-flex">
-          <div class="card-of-speakers-img">
-            <img src="./pictures/speakers/1.PNG" alt="speaker">
-          </div>
-          <div class="card-of-speakers-content">
-            <h5>Jorge Sebastiao</h5>
-            <p class="speaker-description-1">CTO huawei technologies.
-            </p>
-            <p class="speaker-description-2">has 6 current jobs including Chief Security Officer & Growth Hacking .</p>
-          </div>
-        </div>
 
 
-        <div class="cards-speakers display-flex">
-          <div class="card-of-speakers-img">
-            <img src="./pictures/speakers/2.PNG" alt="speaker">
-          </div>
-          <div class="card-of-speakers-content">
-            <h5>Thomas NG</h5>
-            <p class="speaker-description-1">CEO of NG GLOBAL FZ LLC.
-            </p>
-            <p class="speaker-description-2">a leading Consultant for state of the art Smart City Digital landscape.</p>
-          </div>
-        </div>
-
-
-        <div class="cards-speakers display-flex">
-          <div class="card-of-speakers-img">
-            <img src="./pictures/speakers/3.PNG" alt="speaker">
-          </div>
-          <div class="card-of-speakers-content">
-            <h5>Nadine Bitar Chahine </h5>
-            <p class="speaker-description-1">CHIEF PLACEMAKING OFFICER.
-            </p>
-            <p class="speaker-description-2">She is a thought leader on place-led approach for livable cities based in
-              Dubai.</p>
-          </div>
-        </div>
-
-
-        <div class="cards-speakers display-flex">
-          <div class="card-of-speakers-img">
-            <img src="./pictures/speakers/4.PNG" alt="speaker">
-          </div>
-          <div class="card-of-speakers-content">
-            <h5>Mohamed Sadek</h5>
-            <p class="speaker-description-1">Founder, CM-IoT technologies.
-            </p>
-            <p class="speaker-description-2">he develops security solutions to enhance the safety of cities in Dubai.
-            </p>
-          </div>
-        </div>
-
-
-        <div class="cards-speakers display-flex">
-          <div class="card-of-speakers-img">
-            <img src="./pictures/speakers/5.PNG" alt="speaker">
-          </div>
-          <div class="card-of-speakers-content">
-            <h5>David Provenzano</h5>
-            <p class="speaker-description-1">a doctor.
-            </p>
-            <p class="speaker-description-2">a leading expert in Pittsburgh for treating
-              patients who suffer daily from pain.</p>
-          </div>
-        </div>
-
-
-        <div class="cards-speakers display-flex">
-          <div class="card-of-speakers-img">
-            <img src="./pictures/speakers/6.PNG" alt="speaker">
-          </div>
-          <div class="card-of-speakers-content">
-            <h5>Vinod Shukla</h5>
-            <p class="speaker-description-1">Assistant Professor, Information Technology at Amity University Dubai, UAE.
-            </p>
-          </div>
-        </div>
       </div>
 
       <div class="more-btn-container width-100 display-flex">
-        <button class="more-btn display-flex hide" type="button">MORE<i class="fa-solid fa-angle-down"></i></button>
+        <button id="see-more" class="more-btn display-flex hide" type="button">MORE<i
+            class="fa-solid fa-angle-down"></i></button>
       </div>
     </div>
   </section>
