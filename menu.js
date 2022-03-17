@@ -74,7 +74,7 @@ function createSpeaker() {
   if (window.screen.width >= 769) {
     speakers.forEach((speaker) => {
       speakersContainer.innerHTML += `
-        <div class="cards-speakers display-flex">
+        <article class="cards-speakers display-flex">
           <div class="card-of-speakers-img">
             <img src="${speaker.image}" alt="speaker">
           </div>
@@ -84,12 +84,12 @@ function createSpeaker() {
             </p>
             <p class="speaker-description-2">${speaker.desc}</p>
           </div>
-        </div>`;
+        </article>`;
     });
   } else {
     for (i = 0; i < 2; i += 1) {
       speakersContainer.innerHTML += `
-        <div class="cards-speakers display-flex">
+        <article class="cards-speakers display-flex">
           <div class="card-of-speakers-img">
             <img src="${speakers[i].image}" alt="speaker">
           </div>
@@ -99,7 +99,7 @@ function createSpeaker() {
             </p>
             <p class="speaker-description-2">${speakers[i].desc}</p>
           </div>
-        </div>`;
+        </article>`;
     }
   }
 }
@@ -107,7 +107,7 @@ function createSpeaker() {
 btnSeeMore.addEventListener('click', () => {
   while (i < 6) {
     speakersContainer.innerHTML += `
-        <div class="cards-speakers display-flex">
+        <article class="cards-speakers display-flex">
           <div class="card-of-speakers-img">
             <img src="${speakers[i].image}" alt="speaker">
           </div>
@@ -117,7 +117,7 @@ btnSeeMore.addEventListener('click', () => {
             </p>
             <p class="speaker-description-2">${speakers[i].desc}</p>
           </div>
-        </div>`;
+        </article>`;
     i += 1;
     btnSeeMore.classList.add('display-none');
   }

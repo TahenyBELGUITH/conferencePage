@@ -310,6 +310,7 @@ footer {
     list-style: none;
     justify-content: end;
     margin-right: 1rem;
+    padding-right: 3rem;
   }
 
   .social-media ul li {
@@ -361,7 +362,7 @@ footer {
 
   .intro-container h1 {
     padding: 2rem 0;
-    font-size: 100px;
+    font-size: 70px;
     line-height: 120px;
   }
 
