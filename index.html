@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1a9dfed18f.js" crossorigin="anonymous"></script>
+  <link href=“https://fonts.cdnfonts.com/css/cocogoose” rel=“stylesheet”>
+  <link rel="stylesheet" href="styling.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <title>Conference Page</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="social-media display-none show">
+        <ul>
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li>English</li>
+          <li>My Page</li>
+          <li>Logout</li>
+        </ul>
+      </div>
+      <div class="navbar-container display-none">
+        <a class="display-none show" href="index.html"><img src="./pictures/logo/logo.png" alt="Logo"></a>
+        <img class="close hide" src="./pictures/icons/close.png" alt="close">
+        <ul class="list-menu">
+          <li><a href="about.html">About</a></li>
+          <li><a>Program</a></li>
+          <li><a>Speakers</a></li>
+          <li class="sponsor"><a>Sponsors</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="intro-section">
+    <div class="intro-container display-flex width-100">
+      <img class="menu-btn hide" src="./pictures/icons/menu.png" alt="menu">
+      <h4>"Hello! Sharing world"</h4>
+      <h1>EXPO DUBAI SUMMIT 2K20</h1>
+      <p>Expo 2020 is a World Expo, currently hosted by Dubai in the United Arab Emirates from 1 October 2021 to 31
+        March 2022.
+        Originally scheduled for 20 October 2020 to 10 April 2021, it was postponed due to the COVID-19 pandemic.</p>
+
+      <h2>1 October 2021</h2>
+      <span>@Dubai Exhibition Centre</span>
+    </div>
+  </section>
+  <section class="program-section">
+    <div class="program-container display-flex width-100">
+      <div class="program-header">Main Program</div>
+      <hr class="main-separator">
+      <div class="program-cards display-flex">
+        <div class="card display-flex">
+          <img src="./pictures/icons/lecture.png" alt="icon">
+          <h5>Lecture</h5>
+          <p>Listen to the speakers from various countries.</p>
+        </div>
+
+        <div class="card display-flex">
+          <img src="./pictures/icons/watching.png" alt="icon">
+          <h5>CC Exibition</h5>
+          <p>Appreciate various creations applying CC license of artists.</p>
+        </div>
+
+
+        <div class="card display-flex">
+          <img src="./pictures/icons/chat.png" alt="icon">
+          <h5>Forum</h5>
+          <p>Have the time to share your thoughts and opinions.</p>
+        </div>
+
+
+        <div class="card display-flex">
+          <img src="./pictures/icons/workshop.png" alt="icon">
+          <h5>Workshop</h5>
+          <p>Try creating your own work using open source license.</p>
+        </div>
+
+
+        <div class="card display-flex">
+          <img src="./pictures/icons/network.png" alt="icon">
+          <h5>CC Ignite</h5>
+          <p>Get opportunites to network with CC affiliates .</p>
+        </div>
+
+      </div>
+      <div class="program-btn-container width-100 display-flex hide">
+        <button type="button">Join EXPO DUBAI Summit</button>
+      </div>
+      <a class="display-none show" href="#">SEE THE WHOLE PROGRAM</a>
+    </div>
+  </section>
+
+  <!-- speakers section -->
+  <section class="speakers section">
+    <div class="speakers-container display-flex">
+      <h3>Featured speakers</h3>
+      <hr class="main-separator">
+      <div class="cards-speakers-container display-flex">
+
+
+      </div>
+
+      <div class="more-btn-container width-100 display-flex">
+        <button id="see-more" class="more-btn display-flex hide" type="button">MORE<i
+            class="fa-solid fa-angle-down"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- partners -->
+  <section class="partners section">
+    <div class="partners-container display-flex">
+      <h3>Partner</h3>
+      <hr class="main-separator">
+      <div class="partners-img display-grid">
+        <img src="./pictures/sponsors/mozilla.png" alt="sponsor">
+        <img src="./pictures/sponsors/airBnb.png" alt="sponsor">
+        <img src="./pictures/sponsors/google.png" alt="sponsor">
+        <div></div>
+        <img class="auto" src="./pictures/sponsors/games.png" alt="sponsor">
+      </div>
+    </div>
+  </section>
+
+  <footer class="display-flex">
+    <div class="footer-logo-container">
+      <a href="#"><img src="./pictures/logo/logo.png" alt="logo"></a>
+    </div>
+    <p class="copyrights">© All rights reserved</p>
+  </footer>
+  <script src="menu.js"></script>
+</body>
+
+</html>
